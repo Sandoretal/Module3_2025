@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources and files | Module 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a href="tutorial-1.html">Tutorial 1</a>
+      <a href="tutorial-2.html">Tutorial 2</a>
+      <a href="tutorial-3.html">Tutorial 3</a>
+      <a href="tutorial-4.html">Tutorial 4</a>
+      <a class="active" href="resources.html">Resources</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="people.html">People</a>
+      <a href="history.html">History</a>
+    </nav>
+
+    <header class="banner">
+      <span class="eyebrow">Resources</span>
+      <h1>Resources and files</h1>
+      <p class="lead">
+        Everything you need outside the tutorial pages: the setup guide, the guide for each tutorial, shortcuts to
+        the datasets, and below them every file in the module, which you can filter by type or tutorial.
+      </p>
+      <div class="cta-row">
+        <a class="button secondary small" href="#files">Jump to all files</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="cards">
+        <article class="card hot">
+          <h3>Getting started</h3>
+          <ul>
+            <li><a href="https://github.com/Sandoretal/Module3_2025">Course repository</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025#readme">Setup guide (pre-course checklist)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/environments_and_requirements/requirements.txt">requirements.txt</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/environments_and_requirements/environment_day2.yml">environment_day2.yml</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/archive/refs/heads/main.zip">Download the materials (.zip)</a></li>
+          </ul>
+        </article>
+        <article class="card cool">
+          <h3>Tutorial guides</h3>
+          <ul>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/README.md">Tutorial 1: Introduction to Python</a></li>
+            <li><a href="tutorial-2.html">Tutorial 2: EHR data with pandas</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/README.md">Tutorial 3: Time-series analysis</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/README.md">Tutorial 4: Machine learning</a></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Slides</h3>
+          <ul>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/1_Module3_Module_Overview_part_V_Final.pdf">Module overview (PDF)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/2_Module3_Introduction_part_V_Final.pdf">Introduction to Python (PDF)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/3_Module3_EHR_part_V_Final.pdf">Electronic Healthcare Records (PDF)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/4_Module3_Wearables_part_Final.pdf">Wearables and time series (PDF)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/5_Module3_ML_part_V_Final.pdf">Machine learning (PDF)</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/6_Module3_Hackathlon_V_without_Problem.pdf">Hackathon (PDF)</a></li>
+          </ul>
+        </article>
+        <article class="card pop">
+          <h3>Example datasets</h3>
+          <ul>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/parkinsons_disease_data.csv">Tutorial 1 Parkinson's data</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/example_sam.sam">Tutorial 1 SAM example</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/clinvar_5000.vcf">Tutorial 1 VCF example</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/Tutorial_1_extra_exercises/data/alzheimers_disease_data.csv">Tutorial 1 extra exercises: Alzheimer's data</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/data/pd_bloodwork.csv">Tutorial 2 bloodwork</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/pads10_accelerometer_data.csv">Tutorial 3 PADS accelerometer extract</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/Proteomics_tremor_PD.csv">Tutorial 4 proteomics</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/DF_for_unsupervised.csv">Tutorial 4 unsupervised data</a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/Data_for_challenge.csv">Tutorial 4 challenge data</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="files">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Inventory</span>
+          <h2>All indexed files</h2>
+        </div>
+        <div class="filters">
+          <label class="filter">
+            <span>Type</span>
+            <select id="typeFilter" class="search">
+              <option value="">All types</option>
+              <option value="notebook">Notebooks</option>
+              <option value="data">Data</option>
+              <option value="guide">Guides</option>
+              <option value="image">Images</option>
+              <option value="slides">Slides</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>Tutorial</span>
+            <select id="tutorialFilter" class="search">
+              <option value="">All tutorials</option>
+              <option value="1">Tutorial 1</option>
+              <option value="2">Tutorial 2</option>
+              <option value="3">Tutorial 3</option>
+              <option value="4">Tutorial 4</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>Search</span>
+            <input id="fileSearch" class="search" type="search" placeholder="Filter folders or filenames">
+          </label>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Folder</th>
+              <th>File</th>
+              <th>Type</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="fileTable">
+            <tr data-type="data" data-tutorial="" data-search=" demo csv data"><td>/</td><td>demo.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/demo.csv">Open</a></td></tr>
+            <tr data-type="guide" data-tutorial="" data-search="environments and requirements environment day2 yml guide"><td>environments_and_requirements</td><td>environment_day2.yml</td><td>guide</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/environments_and_requirements/environment_day2.yml">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="" data-search="environments and requirements environments ipynb notebook"><td>environments_and_requirements</td><td>environments.ipynb</td><td>notebook</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/environments_and_requirements/environments.ipynb">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="" data-search="environments and requirements requirements txt data"><td>environments_and_requirements</td><td>requirements.txt</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/environments_and_requirements/requirements.txt">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 1 module3 module overview part v final pdf slides"><td>Slides</td><td>1_Module3_Module_Overview_part_V_Final.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/1_Module3_Module_Overview_part_V_Final.pdf">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 2 module3 introduction part v final pdf slides"><td>Slides</td><td>2_Module3_Introduction_part_V_Final.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/2_Module3_Introduction_part_V_Final.pdf">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 3 module3 ehr part v final pdf slides"><td>Slides</td><td>3_Module3_EHR_part_V_Final.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/3_Module3_EHR_part_V_Final.pdf">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 4 module3 wearables part final pdf slides"><td>Slides</td><td>4_Module3_Wearables_part_Final.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/4_Module3_Wearables_part_Final.pdf">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 5 module3 ml part v final pdf slides"><td>Slides</td><td>5_Module3_ML_part_V_Final.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/5_Module3_ML_part_V_Final.pdf">Open</a></td></tr>
+            <tr data-type="slides" data-tutorial="" data-search="slides 6 module3 hackathlon v without problem pdf slides"><td>Slides</td><td>6_Module3_Hackathlon_V_without_Problem.pdf</td><td>slides</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/Slides/6_Module3_Hackathlon_V_without_Problem.pdf">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="" data-search=" test ipynb notebook"><td>/</td><td>test.ipynb</td><td>notebook</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/test.ipynb">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="1" data-search="tutorial 1 tutorial 1 data clinvar 5000 vcf data"><td>tutorial_1/data</td><td>clinvar_5000.vcf</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/clinvar_5000.vcf">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="1" data-search="tutorial 1 tutorial 1 data example sam sam data"><td>tutorial_1/data</td><td>example_sam.sam</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/example_sam.sam">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="1" data-search="tutorial 1 tutorial 1 data parkinson disease txt data"><td>tutorial_1/data</td><td>Parkinson_disease.txt</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/Parkinson_disease.txt">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="1" data-search="tutorial 1 tutorial 1 data parkinsons disease data csv data"><td>tutorial_1/data</td><td>parkinsons_disease_data.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/parkinsons_disease_data.csv">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="1" data-search="tutorial 1 tutorial 1 introduction and functions ipynb notebook"><td>tutorial_1</td><td>Introduction_and_functions.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html">Open rendered</a></td></tr>
+            <tr data-type="guide" data-tutorial="1" data-search="tutorial 1 tutorial 1 readme md guide"><td>tutorial_1</td><td>README.md</td><td>guide</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/README.md">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="1" data-search="tutorial 1 tutorial 1 sam file png image"><td>tutorial_1</td><td>sam_file.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/sam_file.png">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="1" data-search="tutorial 1 tutorial 1 tutorial 1 extra exercises data alzheimers disease data csv data"><td>tutorial_1/Tutorial_1_extra_exercises/data</td><td>alzheimers_disease_data.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/Tutorial_1_extra_exercises/data/alzheimers_disease_data.csv">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="1" data-search="tutorial 1 tutorial 1 tutorial 1 extra exercises extra exercises tutorial 1 ipynb notebook"><td>tutorial_1/Tutorial_1_extra_exercises</td><td>Extra_exercises_tutorial_1.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_1/Tutorial_1_extra_exercises/Extra_exercises_tutorial_1.html">Open rendered</a></td></tr>
+            <tr data-type="image" data-tutorial="1" data-search="tutorial 1 tutorial 1 vcf format png image"><td>tutorial_1</td><td>vcf_format.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/vcf_format.png">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="2" data-search="tutorial 2 tutorial 2 data pd bloodwork csv data"><td>tutorial_2/data</td><td>pd_bloodwork.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/data/pd_bloodwork.csv">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images associations scatter plot examples png image"><td>tutorial_2/images</td><td>associations_scatter_plot_examples.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/associations_scatter_plot_examples.png">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images img 2871 webp image"><td>tutorial_2/images</td><td>IMG_2871.WEBP</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/IMG_2871.WEBP">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images img 2876 jpg image"><td>tutorial_2/images</td><td>IMG_2876.JPG</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/IMG_2876.JPG">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images img 2880 jpg image"><td>tutorial_2/images</td><td>IMG_2880.JPG</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/IMG_2880.JPG">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images img 2882 jpg image"><td>tutorial_2/images</td><td>IMG_2882.jpg</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/IMG_2882.jpg">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="2" data-search="tutorial 2 tutorial 2 images img 2884 webp image"><td>tutorial_2/images</td><td>IMG_2884.WEBP</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/images/IMG_2884.WEBP">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="2" data-search="tutorial 2 tutorial 2 pandas ehr tutorial part1 exercises ipynb notebook"><td>tutorial_2</td><td>pandas_ehr_tutorial_part1_exercises.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part1_exercises.html">Open rendered</a></td></tr>
+            <tr data-type="notebook" data-tutorial="2" data-search="tutorial 2 tutorial 2 pandas ehr tutorial part2 exercises ipynb notebook"><td>tutorial_2</td><td>pandas_ehr_tutorial_part2_exercises.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html">Open rendered</a></td></tr>
+            <tr data-type="notebook" data-tutorial="2" data-search="tutorial 2 tutorial 2 pandas ehr tutorial part3 exercises ipynb notebook"><td>tutorial_2</td><td>pandas_ehr_tutorial_part3_exercises.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html">Open rendered</a></td></tr>
+            <tr data-type="image" data-tutorial="3" data-search="tutorial 3 tutorial 3 images fft png image"><td>tutorial_3/images</td><td>FFT.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/images/FFT.png">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="3" data-search="tutorial 3 tutorial 3 images filter png image"><td>tutorial_3/images</td><td>filter.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/images/filter.png">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="3" data-search="tutorial 3 tutorial 3 images windowing example png image"><td>tutorial_3/images</td><td>windowing_example.png</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/images/windowing_example.png">Open</a></td></tr>
+            <tr data-type="image" data-tutorial="3" data-search="tutorial 3 tutorial 3 images windowing example 2 webp image"><td>tutorial_3/images</td><td>windowing_example_2.webp</td><td>image</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/images/windowing_example_2.webp">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="3" data-search="tutorial 3 tutorial 3 pads10 accelerometer data csv data"><td>tutorial_3</td><td>pads10_accelerometer_data.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/pads10_accelerometer_data.csv">Open</a></td></tr>
+            <tr data-type="guide" data-tutorial="3" data-search="tutorial 3 tutorial 3 readme md guide"><td>tutorial_3</td><td>README.md</td><td>guide</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_3/README.md">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="3" data-search="tutorial 3 tutorial 3 timeseriesanalysis ipynb notebook"><td>tutorial_3</td><td>TimeSeriesAnalysis.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_3/TimeSeriesAnalysis.html">Open rendered</a></td></tr>
+            <tr data-type="data" data-tutorial="4" data-search="tutorial 4 tutorial 4 data for challenge csv data"><td>tutorial_4</td><td>Data_for_challenge.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/Data_for_challenge.csv">Open</a></td></tr>
+            <tr data-type="data" data-tutorial="4" data-search="tutorial 4 tutorial 4 df for unsupervised csv data"><td>tutorial_4</td><td>DF_for_unsupervised.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/DF_for_unsupervised.csv">Open</a></td></tr>
+            <tr data-type="notebook" data-tutorial="4" data-search="tutorial 4 tutorial 4 intro toml ipynb notebook"><td>tutorial_4</td><td>Intro_toML.ipynb</td><td>notebook</td><td><a href="rendered-notebooks/tutorial_4/Intro_toML.html">Open rendered</a></td></tr>
+            <tr data-type="data" data-tutorial="4" data-search="tutorial 4 tutorial 4 proteomics tremor pd csv data"><td>tutorial_4</td><td>Proteomics_tremor_PD.csv</td><td>data</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/Proteomics_tremor_PD.csv">Open</a></td></tr>
+            <tr data-type="guide" data-tutorial="4" data-search="tutorial 4 tutorial 4 readme md guide"><td>tutorial_4</td><td>README.md</td><td>guide</td><td><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_4/README.md">Open</a></td></tr>
+            <tr id="noMatches" style="display: none"><td colspan="4">No files match these filters.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Resources and files for Module 3.
+
+      <p class="site-credit">Website created and maintained by Marirena Bafaloukou. Problems with the site? <a href="mailto:marirena.bafaloukou22@imperial.ac.uk?subject=Module%203%20website" title="Email Marirena Bafaloukou">Email Marirena</a>.</p>
+
+    </footer>
+  </div>
+  <script src="site.js"></script>
+  <script>
+    const input = document.getElementById("fileSearch");
+    const typeFilter = document.getElementById("typeFilter");
+    const tutorialFilter = document.getElementById("tutorialFilter");
+    const emptyRow = document.getElementById("noMatches");
+    const applyFilters = () => {
+      const query = input.value.trim().toLowerCase();
+      let shown = 0;
+      document.querySelectorAll("#fileTable tr").forEach((row) => {
+        if (row === emptyRow) return;
+        const haystack = `${row.dataset.search || ""} ${row.textContent}`.toLowerCase();
+        const visible = haystack.includes(query)
+          && (!typeFilter.value || row.dataset.type === typeFilter.value)
+          && (!tutorialFilter.value || row.dataset.tutorial === tutorialFilter.value);
+        row.style.display = visible ? "" : "none";
+        if (visible) shown += 1;
+      });
+      emptyRow.style.display = shown ? "none" : "";
+    };
+    [input, typeFilter, tutorialFilter].forEach((el) => {
+      el.addEventListener("input", applyFilters);
+      el.addEventListener("change", applyFilters);
+    });
+  </script>
+</body>
+</html>

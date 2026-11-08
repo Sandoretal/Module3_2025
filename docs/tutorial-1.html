@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial 1 | Module 3 (2025)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-tutorial="1" class="theme-katarzyna">
+  <div class="shell">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a class="active" href="tutorial-1.html">Tutorial 1</a>
+      <a href="tutorial-2.html">Tutorial 2</a>
+      <a href="tutorial-3.html">Tutorial 3</a>
+      <a href="tutorial-4.html">Tutorial 4</a>
+      <a href="resources.html">Resources</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="people.html">People</a>
+      <a href="history.html">History</a>
+    </nav>
+
+    <header class="banner">
+      <span class="eyebrow">Tutorial 1</span>
+      <h1>Introduction to Python</h1>
+      <p class="lead">
+        Python syntax, variables, data types, operators, control flow, file handling, a first look at pandas and NumPy, and writing your own functions, all with biomedical examples.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="duo">
+        <div class="mini-panel">
+          <span class="eyebrow">Primary files</span>
+          <h3>Notebook entry points</h3>
+          <ul>
+            <li><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html">Introduction_and_functions notebook</a> <a class="download-icon" href="https://raw.githubusercontent.com/Sandoretal/Module3_2025/main/tutorial_1/Introduction_and_functions.ipynb" data-download="Introduction_and_functions.ipynb" title="Download Introduction_and_functions notebook (.ipynb)" aria-label="Download Introduction_and_functions notebook (.ipynb)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0-4.5-4.5M12 14l4.5-4.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="rendered-notebooks/tutorial_1/Tutorial_1_extra_exercises/Extra_exercises_tutorial_1.html">Extra exercises</a> <a class="download-icon" href="https://raw.githubusercontent.com/Sandoretal/Module3_2025/main/tutorial_1/Tutorial_1_extra_exercises/Extra_exercises_tutorial_1.ipynb" data-download="Extra_exercises_tutorial_1.ipynb" title="Download Extra exercises (.ipynb)" aria-label="Download Extra exercises (.ipynb)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0-4.5-4.5M12 14l4.5-4.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/README.md">Tutorial 1 README</a></li>
+          </ul>
+          <p class="download-all">
+            <a class="button primary small" href="downloads/tutorial_1.zip" download>↓ Download all of Tutorial 1 (.zip, 2.3 MB)</a>
+          </p>
+          <p class="download-note">Includes the notebooks, the extra exercises, the <code>data</code> folder and the README. Unzip it and open the
+            notebooks from inside the folder, so they can find their data.</p>
+        </div>
+        <aside class="contributors">
+          <span class="eyebrow">Tutorial lead</span>
+          <h3>Tutorial lead</h3>
+          <a class="focus-name" href="mailto:k.zoltowska@imperial.ac.uk" title="Email Katarzyna Zoltowska">Katarzyna Zoltowska</a>
+          <p class="see-all"><a href="people.html#contributors">See everyone who contributed</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="concepts">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Concept map</span>
+          <h2>Concepts introduced</h2>
+        </div>
+        <input id="conceptSearch" class="search" type="search" placeholder="Filter concepts or notebooks">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Notebook</th>
+              <th>Concept</th>
+              <th>Files</th>
+            </tr>
+          </thead>
+          <tbody id="conceptTable">
+            <tr data-search="python basics print calculator variables types">
+              <td><span class="pill">Python basics</span></td>
+              <td>Running code, printing, simple calculations, variables, and type checking.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#1.-Let's-run-our-first-python-code">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="data types strings ints floats bool lists tuples dictionaries sets methods">
+              <td><span class="pill">Data types</span></td>
+              <td>Strings, numerics, booleans, and collection types (lists, tuples, dictionaries, sets) with biomedical examples.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#2.-Data-types-in-python">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="operators arithmetic comparison assignment logical">
+              <td><span class="pill">Operators</span></td>
+              <td>Arithmetic, comparison, assignment, and logical operators.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#3.-Arithmetic,-comparison,-assignment-and-logical-operators">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="modules imports libraries random os pip">
+              <td><span class="pill">Modules</span></td>
+              <td>Importing built-in and third-party modules.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#4.-Python-modules">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="loops conditionals if elif else for while">
+              <td><span class="pill">Control flow</span></td>
+              <td>Loops and conditionals.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#5.-Loops-and-conditionals">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="files directories text processing sam vcf open os">
+              <td><span class="pill">Files</span></td>
+              <td>Navigating directories, reading text files, and working with SAM and VCF files.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#7.-Navigating-directories-and-processing-text-files">Rendered notebook</a><br><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/example_sam.sam">SAM example</a><br><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/clinvar_5000.vcf">VCF example</a></td>
+            </tr>
+            <tr data-search="pandas dataframe explore subset sort loc iloc">
+              <td><span class="pill">pandas</span></td>
+              <td>A first look at DataFrames: exploring, subsetting and sorting.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#8.-Data-Science-with-Pandas">Rendered notebook</a><br><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/data/parkinsons_disease_data.csv">Parkinson's dataset</a></td>
+            </tr>
+            <tr data-search="numpy arrays">
+              <td><span class="pill">NumPy</span></td>
+              <td>A gentle introduction to NumPy arrays.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#9.-Gentle-introduction-to-numpy">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="functions def return arguments call">
+              <td><span class="pill">Functions</span></td>
+              <td>Defining and calling your own functions.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Introduction_and_functions.html#10.-Introduction-to-functions">Rendered notebook</a></td>
+            </tr>
+            <tr data-search="extra exercises practice hamming distance reverse complement pandas heatmap pairplot">
+              <td><span class="pill">Extra exercises</span></td>
+              <td>Extra practice with Python and pandas, with built-in checks that tell you whether your answer works.</td>
+              <td><a href="rendered-notebooks/tutorial_1/Tutorial_1_extra_exercises/Extra_exercises_tutorial_1.html">Extra exercises</a><br><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_1/Tutorial_1_extra_exercises/data/alzheimers_disease_data.csv">Alzheimer's dataset</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Tutorial 1 page for Module 3, Autumn 2025.
+
+      <p class="site-credit">Website created and maintained by Marirena Bafaloukou. Problems with the site? <a href="mailto:marirena.bafaloukou22@imperial.ac.uk?subject=Module%203%20website" title="Email Marirena Bafaloukou">Email Marirena</a>.</p>
+
+    </footer>
+  </div>
+  <script src="site.js"></script>
+  <script src="glossary-data.js"></script>
+  <script src="features.js"></script>
+  <script>
+    const input = document.getElementById("conceptSearch");
+    const rows = Array.from(document.querySelectorAll("#conceptTable tr"));
+    input.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const haystack = (row.dataset.search || row.textContent).toLowerCase();
+        row.style.display = haystack.includes(query) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

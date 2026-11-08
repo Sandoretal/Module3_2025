@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial 2 | Module 3 (2025)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-tutorial="2" class="theme-anastasia">
+  <div class="shell">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a href="tutorial-1.html">Tutorial 1</a>
+      <a class="active" href="tutorial-2.html">Tutorial 2</a>
+      <a href="tutorial-3.html">Tutorial 3</a>
+      <a href="tutorial-4.html">Tutorial 4</a>
+      <a href="resources.html">Resources</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="people.html">People</a>
+      <a href="history.html">History</a>
+    </nav>
+
+    <header class="banner">
+      <span class="eyebrow">Tutorial 2</span>
+      <h1>Electronic Healthcare Records with pandas</h1>
+      <p class="lead">
+        Three notebooks on tabular clinical data: wrangling Electronic Healthcare Records with pandas, visualising and cleaning them, and testing hypotheses and associations.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="duo">
+        <div class="mini-panel">
+          <span class="eyebrow">Primary files</span>
+          <h3>Notebook entry points</h3>
+          <ul>
+            <li><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part1_exercises.html">Part 1 exercises</a> <a class="download-icon" href="https://raw.githubusercontent.com/Sandoretal/Module3_2025/main/tutorial_2/pandas_ehr_tutorial_part1_exercises.ipynb" data-download="pandas_ehr_tutorial_part1_exercises.ipynb" title="Download Part 1 exercises (.ipynb)" aria-label="Download Part 1 exercises (.ipynb)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0-4.5-4.5M12 14l4.5-4.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html">Part 2 exercises</a> <a class="download-icon" href="https://raw.githubusercontent.com/Sandoretal/Module3_2025/main/tutorial_2/pandas_ehr_tutorial_part2_exercises.ipynb" data-download="pandas_ehr_tutorial_part2_exercises.ipynb" title="Download Part 2 exercises (.ipynb)" aria-label="Download Part 2 exercises (.ipynb)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0-4.5-4.5M12 14l4.5-4.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html">Part 3 exercises</a> <a class="download-icon" href="https://raw.githubusercontent.com/Sandoretal/Module3_2025/main/tutorial_2/pandas_ehr_tutorial_part3_exercises.ipynb" data-download="pandas_ehr_tutorial_part3_exercises.ipynb" title="Download Part 3 exercises (.ipynb)" aria-label="Download Part 3 exercises (.ipynb)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 3v11m0 0-4.5-4.5M12 14l4.5-4.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+          <p class="download-all">
+            <a class="button primary small" href="downloads/tutorial_2.zip" download>↓ Download all of Tutorial 2 (.zip, 1.1 MB)</a>
+          </p>
+          <p class="download-note">Includes the three notebooks, the <code>data</code> folder and the images. Unzip it and open the
+            notebooks from inside the folder, so they can find their data.</p>
+        </div>
+        <aside class="contributors">
+          <span class="eyebrow">Tutorial lead</span>
+          <h3>Tutorial lead</h3>
+          <span class="focus-name">Anastasia Ilina</span>
+          <p class="see-all"><a href="people.html#contributors">See everyone who contributed</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="concepts">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Concept map</span>
+          <h2>Concepts introduced</h2>
+        </div>
+        <input id="conceptSearch" class="search" type="search" placeholder="Filter concepts or notebooks">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Notebook</th>
+              <th>Concept</th>
+              <th>Files</th>
+            </tr>
+          </thead>
+          <tbody id="conceptTable">
+            <tr data-search="part 1 dataframe selection filtering loc iloc dtypes numeric strings datetime missing">
+              <td><span class="pill">Part 1</span></td>
+              <td>DataFrames, selection and filtering, and pandas data types.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part1_exercises.html#%F0%9F%8E%AF-Foundations:-pandas-DataFrames-(theory)">Exercises</a><br><a href="https://github.com/Sandoretal/Module3_2025/blob/main/tutorial_2/data/pd_bloodwork.csv">Bloodwork dataset</a></td>
+            </tr>
+            <tr data-search="part 1 transform apply map lambda agg groupby cut qcut binning np.where">
+              <td><span class="pill">Part 1</span></td>
+              <td>Transforming data: new columns, <code>.transform()</code>, <code>.apply()</code>, <code>.map()</code> and binning with <code>pd.cut()</code>.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part1_exercises.html#%E2%9A%99%EF%B8%8F-Understanding-.transform()-and-lambda-x:-in-pandas">Exercises</a></td>
+            </tr>
+            <tr data-search="part 1 merge join concat datasets">
+              <td><span class="pill">Part 1</span></td>
+              <td>Merging and joining datasets.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part1_exercises.html#%F0%9F%94%97-Merging-/-Joining-Datasets-in-pandas">Exercises</a></td>
+            </tr>
+            <tr data-search="part 2 count plots histograms boxplots violin swarm scatter log scales seaborn">
+              <td><span class="pill">Part 2</span></td>
+              <td>Visualising clinical tabular data: count plots, histograms, box, violin and scatter plots, and log scales.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html#%E2%9C%8F%EF%B8%8F%C2%A0Now-let's-do-some-visualisations!">Exercises</a></td>
+            </tr>
+            <tr data-search="part 2 outliers iqr z score mad winsorise capping data entry errors">
+              <td><span class="pill">Part 2</span></td>
+              <td>Outliers and data-entry errors: IQR, z-scores, MAD, capping and winsorisation.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html#%F0%9F%94%8E-Outliers-&amp;-Data-Entry-Errors-(theory-%E2%86%92-practice)">Exercises</a></td>
+            </tr>
+            <tr data-search="part 2 duplicates">
+              <td><span class="pill">Part 2</span></td>
+              <td>Finding and handling duplicate records.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html#%F0%9F%A7%B9-Duplicates-and-how-to-deal-with-them">Exercises</a></td>
+            </tr>
+            <tr data-search="part 2 missingness mcar mar mnar little imputation mice iterative">
+              <td><span class="pill">Part 2</span></td>
+              <td>Missing data: MCAR, MAR and MNAR, Little's test, and imputation.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part2_exercises.html#%F0%9F%A7%A9-Missingness-&amp;-Imputation">Exercises</a></td>
+            </tr>
+            <tr data-search="part 3 hypothesis testing assumptions qq plots t-test welch mann whitney anova kruskal confidence intervals effect sizes">
+              <td><span class="pill">Part 3</span></td>
+              <td>Comparing groups: choosing a test, checking assumptions, and reporting results.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html#%F0%9F%A7%AE-Statistical-testing---Group-Comparisons">Exercises</a></td>
+            </tr>
+            <tr data-search="part 3 associations correlations pearson spearman kendall heatmap bonferroni benjamini hochberg">
+              <td><span class="pill">Part 3</span></td>
+              <td>Correlations, correlation matrices, and correcting for multiple comparisons.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html#%F0%9F%94%97-Correlations">Exercises</a></td>
+            </tr>
+            <tr data-search="part 3 chi squared cramers v phi odds ratio risk categorical">
+              <td><span class="pill">Part 3</span></td>
+              <td>The chi-squared test of independence and effect sizes for categorical data.</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html#%F0%9F%94%8D-Chi-squared-test-of-independence-(%CF%87%C2%B2)">Exercises</a></td>
+            </tr>
+            <tr data-search="part 3 post hoc pairwise tukey games howell dunn">
+              <td><span class="pill">Part 3</span></td>
+              <td>Optional: pairwise post-hoc comparisons (Tukey, Games–Howell, Dunn).</td>
+              <td><a href="rendered-notebooks/tutorial_2/pandas_ehr_tutorial_part3_exercises.html#Advanced-Material-(optional)---Pairwise-comparisons-&amp;-multiple-testing">Exercises</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Tutorial 2 page for Module 3, Autumn 2025.
+
+      <p class="site-credit">Website created and maintained by Marirena Bafaloukou. Problems with the site? <a href="mailto:marirena.bafaloukou22@imperial.ac.uk?subject=Module%203%20website" title="Email Marirena Bafaloukou">Email Marirena</a>.</p>
+
+    </footer>
+  </div>
+  <script src="site.js"></script>
+  <script src="glossary-data.js"></script>
+  <script src="features.js"></script>
+  <script>
+    const input = document.getElementById("conceptSearch");
+    const rows = Array.from(document.querySelectorAll("#conceptTable tr"));
+    input.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const haystack = (row.dataset.search || row.textContent).toLowerCase();
+        row.style.display = haystack.includes(query) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

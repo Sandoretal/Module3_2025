@@ -1,0 +1,10 @@
+# macOS / editor files
+.DS_Store
+.Rhistory
+.ipynb_checkpoints/
+__pycache__/
+
+# Never publish solutions in this repository
+*solution*
+*withanswers*
+*withsolutions*

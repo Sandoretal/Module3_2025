@@ -1,0 +1,32 @@
+name: Tutorial feedback
+description: Tell us what worked well in a tutorial and what could be better.
+title: "[Tutorial ?] Feedback"
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking a minute to give feedback. Everything here is public, so please don't include personal or health information.
+  - type: dropdown
+    id: tutorial
+    attributes:
+      label: Which tutorial?
+      options:
+        - Tutorial 1
+        - Tutorial 2
+        - Tutorial 3
+        - Tutorial 4
+        - Installation session
+        - The website
+    validations:
+      required: true
+  - type: textarea
+    id: liked
+    attributes:
+      label: What worked well?
+      placeholder: Optional
+  - type: textarea
+    id: improve
+    attributes:
+      label: What could be better?
+      placeholder: "Optional: for example, a section that was confusing, too fast or too slow."

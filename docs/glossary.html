@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary | Module 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="slides.html">Slides</a>
+      <a href="tutorial-1.html">Tutorial 1</a>
+      <a href="tutorial-2.html">Tutorial 2</a>
+      <a href="tutorial-3.html">Tutorial 3</a>
+      <a href="tutorial-4.html">Tutorial 4</a>
+      <a href="resources.html">Resources</a>
+      <a class="active" href="glossary.html">Glossary</a>
+      <a href="people.html">People</a>
+      <a href="history.html">History</a>
+    </nav>
+
+    <header class="banner">
+      <span class="eyebrow">Glossary</span>
+      <h1>Key terms</h1>
+      <p class="lead">
+        Short, plain-language definitions of the terms used across the four tutorials. Terms in the tutorial
+        concept tables link here, so you can look something up without leaving your place.
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">A–Z</span>
+          <h2>All terms</h2>
+        </div>
+        <div class="filters">
+          <label class="filter">
+            <span>Tutorial</span>
+            <select id="glossaryTutorial" class="search">
+              <option value="">All tutorials</option>
+              <option value="1">Tutorial 1</option>
+              <option value="2">Tutorial 2</option>
+              <option value="3">Tutorial 3</option>
+              <option value="4">Tutorial 4</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>Search</span>
+            <input id="glossaryFilter" class="search" type="search" placeholder="Filter terms">
+          </label>
+        </div>
+      </div>
+      <nav class="az-index" id="glossaryIndex" aria-label="Jump to letter"></nav>
+      <p class="empty-note" id="glossaryEmpty" hidden>No terms match your filter.</p>
+      <div id="glossaryList"></div>
+    </section>
+
+    <footer>Glossary for Module 3. Missing a term? Use the feedback buttons on any tutorial page.
+
+      <p class="site-credit">Website created and maintained by Marirena Bafaloukou. Problems with the site? <a href="mailto:marirena.bafaloukou22@imperial.ac.uk?subject=Module%203%20website" title="Email Marirena Bafaloukou">Email Marirena</a>.</p>
+
+    </footer>
+  </div>
+  <script src="site.js"></script>
+  <script src="glossary-data.js"></script>
+  <script>
+    (() => {
+      const TUTORIALS = {
+        1: "Introduction to Python",
+        2: "EHR data with pandas",
+        3: "Time-series analysis",
+        4: "Machine learning"
+      };
+      const list = document.getElementById("glossaryList");
+      const index = document.getElementById("glossaryIndex");
+      const filter = document.getElementById("glossaryFilter");
+      const tutorialSelect = document.getElementById("glossaryTutorial");
+      const empty = document.getElementById("glossaryEmpty");
+      const sortKey = (term) => term.replace(/^[^A-Za-z0-9]+/, "").toLowerCase();
+      const entries = [...window.MODULE3_GLOSSARY].sort((a, b) => sortKey(a.term).localeCompare(sortKey(b.term)));
+      const letterOf = (entry) => sortKey(entry.term).charAt(0).toUpperCase();
+
+      const groups = new Map();
+      entries.forEach((entry) => {
+        const letter = letterOf(entry);
+        if (!groups.has(letter)) {
+          groups.set(letter, []);
+        }
+        groups.get(letter).push(entry);
+      });
+
+      list.innerHTML = [...groups].map(([letter, items]) => `
+        <div class="gloss-group" data-letter="${letter}">
+          <h3 class="gloss-letter" id="letter-${letter}">${letter}</h3>
+          <dl class="gloss-list">
+            ${items.map((e) => `
+              <div class="gloss-entry" id="${e.id}" data-tutorial="${e.tutorial}"
+                   data-search="${[e.term, ...e.aliases].join(" ").toLowerCase().replace(/"/g, "")}">
+                <dt>${e.term}${e.aliases.length ? `<span class="gloss-aliases">also: ${e.aliases.slice(0, 4).join(", ")}</span>` : ""}</dt>
+                <dd>
+                  ${e.definition}
+                  <a class="gloss-tutorial" href="tutorial-${e.tutorial}.html">Tutorial ${e.tutorial}: ${TUTORIALS[e.tutorial]}</a>
+                </dd>
+              </div>`).join("")}
+          </dl>
+        </div>`).join("");
+
+      index.innerHTML = [...groups.keys()].map((l) => `<a href="#letter-${l}">${l}</a>`).join("");
+
+      function applyFilter() {
+        const query = filter.value.trim().toLowerCase();
+        const tutorial = tutorialSelect.value;
+        let shown = 0;
+        list.querySelectorAll(".gloss-group").forEach((group) => {
+          let groupShown = 0;
+          group.querySelectorAll(".gloss-entry").forEach((entry) => {
+            const text = entry.dataset.search + " " + entry.querySelector("dd").textContent.toLowerCase();
+            const ok = (!query || text.includes(query)) && (!tutorial || entry.dataset.tutorial === tutorial);
+            entry.hidden = !ok;
+            groupShown += ok ? 1 : 0;
+          });
+          group.hidden = groupShown === 0;
+          index.querySelector(`a[href="#letter-${group.dataset.letter}"]`).classList.toggle("is-empty", groupShown === 0);
+          shown += groupShown;
+        });
+        empty.hidden = shown > 0;
+      }
+
+      filter.addEventListener("input", applyFilter);
+      tutorialSelect.addEventListener("change", applyFilter);
+
+      // Highlight and scroll to a linked term (glossary.html#p-value).
+      function showTarget() {
+        const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        list.querySelectorAll(".is-target").forEach((el) => el.classList.remove("is-target"));
+        if (target && target.classList.contains("gloss-entry")) {
+          target.classList.add("is-target");
+          target.scrollIntoView({ block: "center" });
+        }
+      }
+      window.addEventListener("hashchange", showTarget);
+      showTarget();
+    })();
+  </script>
+</body>
+</html>
